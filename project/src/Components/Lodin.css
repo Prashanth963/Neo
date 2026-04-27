@@ -1,0 +1,88 @@
+.quote-container {
+  width: 80%;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quote-title {
+  margin: 0;
+  text-align: center;
+}
+
+.quote-form {
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.group label,
+.message-box label {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.group input,
+.group select,
+.message-box textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.message-box {
+  margin-bottom: 20px;
+}
+
+.message-box textarea {
+  width: 100%;
+  height: 150px;
+  resize: none;
+}
+
+.submit {
+  width: 220px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  align-items: center;
+}
+
+
+.submit:hover {
+  background: #17328f;
+}
+.s:hover{
+    cursor: pointer;
+    border: 2px solid blue;
+}
+.form-header {
+   position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}

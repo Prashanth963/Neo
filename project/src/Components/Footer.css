@@ -1,0 +1,144 @@
+.rt {
+  background-color: #111;
+  color: white;
+  padding: 100px 40px 40px 40px;
+  font-family: Arial, sans-serif;
+  position: relative;
+  margin-top: 100px;
+}
+
+.er {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.re {
+  flex: 1;
+  
+
+}
+
+.th h4,
+.re h4 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.th p,
+.re p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 6px 0;
+    padding:  15px 0 0 0 ;
+}
+
+.ht {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.mg {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 50%;
+
+}
+
+.ll {
+   gap: 20px;
+  padding:  15px 0 0 0 ;
+  margin-left: 20px;
+}
+
+.ll li {
+
+  margin: 12px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+.ll :hover{
+     cursor: pointer;
+     color: blue;
+}
+
+.bn {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+hr {
+  margin-top: 20px;
+  border: 0.5px solid #444;
+}
+/* top contact boxes */
+.footer-top {
+  display: flex;
+   gap: 70px;
+   background: transparent;
+   position: absolute;
+  margin-bottom: 40px;
+  top:-70px;
+  left: 40px;
+  right: 40px;
+  flex-wrap: wrap;
+  min-width: 100px;
+  
+}
+
+.contact-box {
+  flex: 1;
+  min-width: 220px;
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  gap : 50px;
+}
+
+.logo-box {
+  align-items: center;
+
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  border: 3px solid blue;
+  
+
+}
+.gm {
+  width: 235px;
+  height: 85px;
+  cursor: pointer;
+  
+  
+}
+.inp {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border-radius: 30px;
+  border-color: white;
+  margin-top: 10px;
+  background-color: black;
+  font-size: 20px;
+  
+
+}
+.inp:hover{
+  cursor: pointer;
+  border-color: blue;
+}
+.p{
+  cursor: pointer;
+}
+.p:hover{
+  cursor: pointer;
+  color: blue;
+}
