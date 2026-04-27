@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './About.css';
+import { Link } from 'react-router-dom';
 import women from "./Allimages/girl.png";
 import farm from "./Allimages/fe.png";
 import Login from './Login';
 import sea from './Allimages/sea.jpeg';
+import bannerImg from "./Allimages/fish.jpg"
 
 const About = () => {
   const [showLogin, setShowLogin] = useState(false);
@@ -30,6 +32,22 @@ const About = () => {
 
   return (
     <>
+     <div className="product-page">
+          <div
+            className="product-banner"
+            style={{ backgroundImage: `url(${bannerImg})` }}
+          >
+            <div className="product-overlay">
+              <h1>About</h1>
+              <p>
+                <Link to="/" className="breadcrumb-link">
+                  Home
+                </Link>{" "}
+                | About
+              </p>
+            </div>
+          </div>
+        </div>
       <section className="about-section">
         <div className="container">
 

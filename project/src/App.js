@@ -9,13 +9,17 @@ import Career from "./Components/Career";
 import About from "./Components/About";
 import Home from "./Components/Home";
 import Product from "./Components/Product";
+import Scroll from "./Components/Scroll";
 
 const App=()=>{
 
    return (
     <>
+    
+     <Scroll/>
     <Nav1/>
     <Nav/>
+    
     <Routes>
       <Route path="/" element={<Home/>}/>
           <Route path="/Login" element={<Login/>}/> 
@@ -23,9 +27,11 @@ const App=()=>{
        <Route path="/Care" element={<Career/>}/>
        <Route path="/about" element={<About/>}/> 
        <Route path="/product" element={<Product/>}/>
+      
     </Routes>
     
       <Footer/>
+      
     </>
 
    );

@@ -1,11 +1,29 @@
 import React from "react";
 import'./Career.css';
 import win from "./Allimages/pra.webp";
+import { Link } from "react-router-dom";
+import bannerImg from "./Allimages/fish.jpg"
 
 const Career=()=>
 {
     return(
         <div>
+         <div className="product-page">
+              <div
+                className="product-banner"
+                style={{ backgroundImage: `url(${bannerImg})` }}
+              >
+                <div className="product-overlay">
+                  <h1>Career</h1>
+                  <p>
+                    <Link to="/" className="breadcrumb-link">
+                      Home
+                    </Link>{" "}
+                    | Career
+                  </p>
+                </div>
+              </div>
+            </div>
         <div className="pj">
             <div className="ff">
             <h3>JOIN OUR TEAM</h3>

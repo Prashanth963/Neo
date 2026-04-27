@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Product.css";
+import { Link } from "react-router-dom";
 import img1 from "./Allimages/Culture.jpg";
 import img2 from "./Allimages/Culture-Min.jpg";
 import img3 from "./Allimages/Grow.jpg"
@@ -19,7 +20,7 @@ import img17 from "./Allimages/Rhodo-PS.jpg"
 import img20 from "./Allimages/allsan.png"
 import img21 from "./Allimages/iosan.png"
 import img23 from "./Allimages/fresh.png"
-
+import bannerImg from "./Allimages/fish.jpg"
 
 
 
@@ -541,6 +542,23 @@ const Product = () => {
 
 ];
   return (
+    <>
+     <div className="product-page">
+      <div
+        className="product-banner"
+        style={{ backgroundImage: `url(${bannerImg})` }}
+      >
+        <div className="product-overlay">
+          <h1>Products</h1>
+          <p>
+            <Link to="/" className="breadcrumb-link">
+              Home
+            </Link>{" "}
+            | Products
+          </p>
+        </div>
+      </div>
+    </div>
     <div className="aq-main">
 
       {/* HERO */}
@@ -614,6 +632,7 @@ const Product = () => {
       )}
 
     </div>
+    </>
   );
 };
 

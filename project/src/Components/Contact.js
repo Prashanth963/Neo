@@ -3,10 +3,29 @@ import './Contact.css';
 import jj from "./Allimages/telephone-call.png";
 import jk from "./Allimages/name.png";
 import kl from "./Allimages/ken.png";
+import { Link } from "react-router-dom";
+import bannerImg from "./Allimages/fish.jpg"
 
 const Conatct=()=>{
 
     return(
+      <>
+       <div className="product-page">
+      <div
+        className="product-banner"
+        style={{ backgroundImage: `url(${bannerImg})` }}
+      >
+        <div className="product-overlay">
+          <h1>Contact</h1>
+          <p>
+            <Link to="/" className="breadcrumb-link">
+              Home
+            </Link>{" "}
+            | Contact
+          </p>
+        </div>
+      </div>
+    </div>
        <div className="nx">
         <div className="vc">
            <div className="cc">
@@ -96,7 +115,7 @@ const Conatct=()=>{
 
         </div>
         
-        
+        </>
         
 
     )

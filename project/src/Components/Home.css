@@ -354,3 +354,153 @@
     flex-direction: column;
   }
 }
+.nb-main-banner {
+  position: relative;
+  min-height: 90vh;
+  width: 68rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 70px 90px;
+  overflow: hidden;
+}
+
+.nb-dark-layer {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 12, 30, 0.9) 30%,
+    rgba(5, 12, 30, 0.55) 65%,
+    rgba(5, 12, 30, 0.2) 100%
+  );
+}
+
+.nb-banner-wrap {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nb-content-side {
+  flex: 1;
+  max-width: 650px;
+  color: #ffffff;
+}
+
+.nb-mini-tag {
+  display: inline-block;
+  padding: 8px 18px;
+  font-size: 19px;
+  border-radius: 30px;
+  background: rgba(79, 110, 247, 0.25);
+  margin-bottom: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.nb-heading-text {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0 0 25px 0;
+}
+
+.nb-para-text {
+  font-size: 20px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.92);
+  margin: 0 0 35px 0;
+  max-width: 600px;
+}
+
+.nb-action-btn {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 12px;
+  background: #4f6ef7;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nb-action-btn:hover {
+  transform: translateY(-3px);
+}
+
+.nb-image-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nb-product-panel {
+  width: 420px;
+  height: 300px;
+  border-radius: 30px;
+  backdrop-filter: blur(18px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+    background: white;
+
+}
+
+.nb-product-pic {
+  width: 100%;
+  display: block;
+  height: auto;
+  object-position: contain;
+  border-radius: 30px;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .nb-banner-wrap {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nb-heading-text {
+    font-size: 42px;
+  }
+
+  .nb-para-text {
+    font-size: 18px;
+  }
+
+  .nb-main-banner {
+    padding: 50px 30px;
+  }
+
+  .nb-product-panel {
+    width: 320px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .nb-heading-text {
+    font-size: 34px;
+  }
+
+  .nb-para-text {
+    font-size: 16px;
+  }
+
+  .nb-main-banner {
+    padding: 40px 20px;
+  }
+
+  .nb-product-panel {
+    width: 260px;
+    padding: 20px;
+  }
+}

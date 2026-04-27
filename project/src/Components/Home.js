@@ -14,6 +14,7 @@ import jk from "./Allimages/name.png";
 import kl from "./Allimages/ken.png";
 import ag from "./Allimages/Ag.jpg";
 import { Link } from "react-router-dom";
+import bgImage from "./Allimages/fish.jpg"
 
 
 const Home = () => {
@@ -40,6 +41,39 @@ const Home = () => {
       }, [showLogin]);
   return (
     <>
+        <section
+      className="nb-main-banner"
+      style={{ backgroundImage: `url(${bgImage})` }}
+    >
+      <div className="nb-dark-layer"></div>
+
+      <div className="nb-banner-wrap">
+        <div className="nb-content-side">
+          <span className="nb-mini-tag">Neon Biotech</span>
+
+          <h1 className="nb-heading-text">
+            Advanced Probiotics <br />
+            for Pond Ecosystem
+          </h1>
+
+          <p className="nb-para-text">
+            Powerful microbial blends that detoxify pond bottoms,
+            suppress Vibrio, reduce ammonia, and maintain optimal
+            dissolved oxygen for healthy shrimp and fish growth.
+          </p>
+        </div>
+
+        <div className="nb-image-side">
+          <div className="nb-product-panel">
+            <img
+              src={cul}
+              alt="Product"
+              className="nb-product-pic"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
     <section className="services-section">
       <h2 className="section-title">Our Services</h2>
       <p className="section-subtitle">
